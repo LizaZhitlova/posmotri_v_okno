@@ -9,6 +9,8 @@ html {
 }
 
 .page {
+  display: grid;
+  place-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -52,7 +54,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed",sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
@@ -61,11 +63,12 @@ ol {
 
 .search-form__checkbox-list {
   display: inline-flex;
-  align-items: center;
+  align-items:center;
   gap: 13px;
 }
 .search-form__label {
   display: flex;
+  align-items:center;
   gap: 7px;
 }
 
@@ -80,7 +83,7 @@ ol {
   cursor: pointer;
 }
 
-.search-form__checkbox:active + .search-form__pseudo-checkbox::after {
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: "";
   width: 15px;
   height: 15px;
@@ -126,19 +129,20 @@ ol {
   border-left: 0;
   border-right: 0;
   background-color: transparent;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed",sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
   width: 100%;
   color: #fff;
+  appearance: none;
 }
 
 .content__list {
   position: relative;
   width: 399px;
   height: 290px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .content__list-item:not(:last-child) {
@@ -187,7 +191,7 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: "Oswald",sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 70.5px;
@@ -207,7 +211,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: "Oswald",sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
@@ -221,7 +225,7 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed",sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 16px;
@@ -246,7 +250,7 @@ button {
   cursor: pointer;
   background-color: transparent;
   border: 1px #fff solid;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed",sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.6px;
